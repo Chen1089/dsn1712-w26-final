@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Text */
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+}
+
+/* Header */
+
+header {
+    padding: 1.25rem 0;
+    background-color: #fff;
+}
+
+.header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+ 
+}
+
+/* Product Gallery */
+
+.product-gallery {
+    padding-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery-grid img {
+  border-radius: 0.5rem;
+}
+
+.main-image {
+    grid-column: 1 / 4;
+}
+
+/* Product Info */
+
+.product-info {
+    padding: 2rem 0 3rem;
+}
+
+.product-info h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.product-info p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.product-info .label {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.flavours {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.price {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.product-info button {
+    padding: 0.5rem 1.25rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+/* Behind the Dough */
+
+.behind {
+    padding: 3rem 0;
+    background-color: #f8fafc;
+    font-size: 1.25rem;
+}
+
+.behind h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Reviews */
+
+.reviews {
+    padding: 3rem 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reviews-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.author {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/* Related Products */
+
+.related-products {
+    padding: 3rem 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #f8fafc;
+    text-align: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.product-card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-card h3 {
+    margin: 0.75rem 0 0.5rem;
+}
+
+.product-card p {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 1.5rem 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
