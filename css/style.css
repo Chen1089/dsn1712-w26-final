@@ -75,7 +75,7 @@ header {
 /* Product Gallery */
 
 .product-gallery {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .gallery-grid {
@@ -228,7 +228,13 @@ footer p {
 
 @media screen and (min-width: 768px) {
 
-/* Gallery */
+/* Nav */
+
+.nav-list a {
+    font-size: 1rem;
+}
+
+/* 768 Gallery */
 
 .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -239,37 +245,61 @@ footer p {
     grid-column: auto;
 }
 
-/* Product info */
+/* 768 Product info */
 
 .product-info .wrapper {
     max-width: 700px;
 }
 
-.product-info p {
-    font-size: 0.9rem;
+.product-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-/* Behind */
+.product-info .label {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.flavours {
+    margin-bottom: 0;
+}
+
+.price {
+    margin-bottom: 0;
+}
+
+.product-info p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+}
+
+/* 768 Behind */
 
 .behind-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .behind {
-    font-size: 1.05rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
 }
 
-/* Reviews */
+/* 768 Reviews */
 
 .reviews-layout {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 4.5rem;
 }
 
 .reviews {
-    font-size: 1.17rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
 }
 
 .author {
@@ -277,11 +307,142 @@ footer p {
     margin-bottom: 1rem;
 }
 
-/* Related products */
+/* 768 Related products */
 
 .products-layout {
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
+/* 768 Footer */
+
+footer {
+    font-size: 0.85rem;
+}
+
+}
+/* 960px Layout */
+
+@media screen and (min-width: 960px) {
+
+.top-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding-bottom: 3rem;
+}
+/* 960 Gallery */
+
+.product-gallery {
+    padding-bottom: 0;
+}
+
+.gallery-grid {
+    gap: 2rem 1rem;
+}
+
+/* 960 Product Info */
+
+.product-info {
+    padding: 0;
+}
+
+.product-info p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+}
+
+.product-info .label {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.flavours {
+    margin-bottom: 0;
+}
+
+.price {
+    margin-bottom: 0;
+}
+
+/* 960 Behind */
+
+.behind-layout {
+    gap: 2rem;
+}
+
+.behind {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size:1rem;
+}
+
+/* 960 Reviews */
+
+.reviews-layout {
+    gap: 4rem;
+}
+
+.reviews {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size:1rem;
+}
+
+.author {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 960 Related products */
+
+.products-layout {
+    gap: 1rem;
+}
+
+/* 960 Footer */
+
+footer {
+    font-size: 0.85rem;
+}
+
+}
+
+/* Widescreen Layout */
+
+@media screen and (min-width: 1200px) {
+
+  .gallery-grid {
+    gap: 1rem;
+  }
+
+  .product-info {
+    max-width: 560px;
+  }
+
+  .behind {
+    padding: 2.5rem 0;
+  }
+
+  .behind-layout {
+    gap: 3rem;
+  }
+
+  .reviews {
+    padding: 2.5rem 0;
+  }
+
+  .reviews-layout {
+    gap: 3rem;
+  }
+
+  .related-products {
+    padding: 2.5rem 0;
+  }
+
+  .products-layout {
+    gap: 1rem;
+  }
 }
