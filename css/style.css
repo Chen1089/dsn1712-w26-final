@@ -223,3 +223,65 @@ footer {
 footer p {
     margin-bottom: 0;
 }
+
+/* 768px Layout */
+
+@media screen and (min-width: 768px) {
+
+/* Gallery */
+
+.gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.main-image {
+    grid-column: auto;
+}
+
+/* Product info */
+
+.product-info .wrapper {
+    max-width: 700px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+}
+
+/* Behind */
+
+.behind-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.behind {
+    font-size: 1.05rem;
+}
+
+/* Reviews */
+
+.reviews-layout {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.reviews {
+    font-size: 1.17rem;
+}
+
+.author {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Related products */
+
+.products-layout {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+}
